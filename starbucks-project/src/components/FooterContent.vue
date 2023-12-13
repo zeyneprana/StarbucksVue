@@ -1,8 +1,8 @@
 <template>
     <div>
         <q-list>
-            <q-expansion-item group="content" class="q-my-lg" v-for="footer in footerList" :key="footer.id"
-                style="font-size: 25px;" :label="footer.title">
+            <q-expansion-item group="content" class="q-my-lg" v-for="footer in footerList" :key="footer" style="font-size: 25px;"
+                :label="footer.title">
                 <q-card>
                     <q-card-section>
                         <q-list separator>
@@ -18,13 +18,10 @@
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, reactive, toRefs } from 'vue';
-
-export default defineComponent({
-    setup() {
-
-        const state = reactive({
+<script>
+export default {
+    data() {
+        return {
             footerList: [
                 {
                     id: 1, title: "Hakkımızda", content: [
@@ -58,13 +55,8 @@ export default defineComponent({
                 },
 
             ]
+        }
 
-
-        })
-
-
-        return { ...toRefs(state) }
-
-    }
-})
+    },
+}
 </script>
