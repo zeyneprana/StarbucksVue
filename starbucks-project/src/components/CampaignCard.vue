@@ -1,5 +1,5 @@
 <template>
-    <q-card class="my-card" flat bordered>
+    <q-card class="my-card" flat >
             <q-img style="width: 100%;" src="../assets/starbucks-campaign.jpg" />
 
             <q-card-section>

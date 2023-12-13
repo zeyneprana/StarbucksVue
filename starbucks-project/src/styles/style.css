@@ -7,6 +7,9 @@
     list-style: none;
 }
 
+.w-100{
+    width: 10px;
+}
 
 .fs-3{
     font-size: medium;
@@ -35,4 +38,48 @@
 
 .headerNavbar{
     z-index: 1;
+}
+
+
+.product-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.photo-section{
+    display: flex;
+    align-items: center;
+}
+
+.photo-section>img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.product-card>.content-section{
+    
+    align-items: center;
+    text-align: start;
+    
+}
+
+.product-card>.content-section>p:nth-child(1){
+    font-weight: bold;
+    font-size: 23px;
+}
+.product-card>.button-section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* Footer */
+
+
+footer{
+    background-color: white;
 }
