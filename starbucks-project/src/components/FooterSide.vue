@@ -1,26 +1,26 @@
 <template>
-    <footer >
-        <FooterContent/>
-        <q-separator class="q-my-sm "/>
+    <footer>
+        <FooterContent />
+        <q-separator class="q-my-sm " />
         <SocialMediaContent />
         <FooterInfo />
     </footer>
 </template>
 
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import FooterContent from "./FooterContent.vue"
 import FooterInfo from "./FooterInfo.vue";
 import SocialMediaContent from "./SocialMediaContent.vue";
-export default {
-    data() {
-        return {
 
-            
+export default defineComponent({
 
-        }   
+    setup() {
+
     },
 
-    components:{ FooterContent, SocialMediaContent, FooterInfo }
-}
+
+    components: { FooterContent, SocialMediaContent, FooterInfo }
+})
 </script>

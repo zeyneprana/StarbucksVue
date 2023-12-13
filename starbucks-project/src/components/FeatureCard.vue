@@ -14,14 +14,14 @@
     </q-card>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            
-        }
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    setup(){
+
     },
 
     props:["feature"]
-}
+})
 </script>

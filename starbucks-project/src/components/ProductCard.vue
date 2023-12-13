@@ -4,7 +4,7 @@
             <img :src="require(`@/assets/products/${product.url}`)">
         </div>
         <div class="col content-section q-mx-lg q-my-md">
-            <p>{{product.title}}</p>
+            <p>{{ product.title }}</p>
             <p>{{ product.content }}</p>
         </div>
         <div class=" button-section ">
@@ -14,14 +14,15 @@
     </div>
 </template>
 
-<script>
-export default {
-data() {
-    return {
-        
-    }
-},
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-props:["product"]
-}
+export default defineComponent({
+
+    setup() {
+
+    },
+
+    props: ["product"]
+})
 </script>
