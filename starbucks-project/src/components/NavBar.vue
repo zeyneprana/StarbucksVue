@@ -1,8 +1,8 @@
 <template>
-    <div class="row flex justify-between bg-white items-center fixed-top q-px-xl q-py-md shadow-3">
+    <div class="row flex justify-between bg-white items-center fixed-top q-px-xl q-py-md shadow-3 headerNavbar">
         <div class="flex">
-            <img style="width: 60px;" src="../assets/starbucks-navbar.png" alt="">
-            <ul class="flex list-style-none">
+            <img style="width: 60px;" src="../assets/starbucks-navbar.png" >
+            <ul class="flex list-style-none q-my-auto">
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Starbucks Reward</a></li>
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Menü</a></li>
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kampanyalar</a></li>
