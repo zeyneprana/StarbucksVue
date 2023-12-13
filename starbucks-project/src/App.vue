@@ -1,10 +1,8 @@
 <template>
   <div>
     <NavBar />
-    <ContentSide class="mt-5" />
+    <ContentSide />
   </div>
-
-  
 </template>
 
 <script>

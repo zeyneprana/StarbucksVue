@@ -1,5 +1,5 @@
 <template>
-    <div class="row flex justify-between bg-white items-center fixed-top q-px-xl q-py-md shadow-3">
+    <div class="row flex justify-between bg-white items-center q-px-xl q-py-md  shadow-3">
         <div class="flex">
             <img style="width: 60px;" src="../assets/starbucks-navbar.png" alt="">
             <ul class="flex list-style-none">
@@ -14,10 +14,10 @@
             <div>
                 <ul class="flex items-baseline  list-style-none">
                     <li class="">
-                        <q-btn color="white" unelevated text-color="black" icon="location_on"  label="Mağazalarımız" />
+                        <q-btn color="white" text-color="black" icon="location_on" label="Mağazalarımız" />
                     </li>
                     <li class="q-mx-sm ">
-                        <q-btn rounded color="green-8 text-weight-bold" label="Alışverişe Başla" />
+                        <q-btn rounded color="green-8" label="Alışverişe Başla" />
                     </li>
                 </ul>
             </div>
