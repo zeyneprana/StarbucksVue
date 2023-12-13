@@ -9,12 +9,15 @@
 </template>
 
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import LeftSide from './LeftSide.vue';
 import RightSide from './RightSide.vue';
 
-export default {
-    
+export default defineComponent({
+    setup(){
+
+    },
     components: { LeftSide,RightSide }
-}
+})
 </script>
