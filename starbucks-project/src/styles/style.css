@@ -55,7 +55,7 @@
 
 .photo-section>img{
     width: 200px;
-    border-radius: 50%;
+    
 }
 
 .product-card>.content-section{
@@ -74,12 +74,4 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-
-/* Footer */
-
-
-footer{
-    background-color: white;
 }

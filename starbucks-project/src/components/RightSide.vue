@@ -3,8 +3,6 @@
         <CampaignCard class="q-my-md" />
         <FeatureCard v-for="feature in featureCardList" :key="feature.id" :feature="feature" />
         <ProductCard v-for="product in productList" :key="product" :product="product" />
-        <q-separator class="q-my-lg"/>
-        <FooterSide/>
     </div>
 </template>
 
@@ -13,7 +11,6 @@
 import CampaignCard from './CampaignCard.vue';
 import FeatureCard from './FeatureCard.vue';
 import ProductCard from './ProductCard.vue';
-import FooterSide from './FooterSide.vue';
 
 export default {
     data() {
@@ -34,7 +31,7 @@ export default {
             ]
         }
     },
-    components: { CampaignCard, FeatureCard, ProductCard, FooterSide },
+    components: { CampaignCard, FeatureCard, ProductCard },
     
 }
 </script>
