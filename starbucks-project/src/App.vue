@@ -1,23 +1,21 @@
 <template>
   <div>
-    <NavBar />
-    <ContentSide class="mt-5" />
+    <NavBar/>
+    <ContentSide/>
   </div>
-
-  
 </template>
 
-<script>
-import ContentSide from "./components/ContentSide.vue";
-import NavBar  from "./components/NavBar.vue";
+<script lang="ts">
+import { defineComponent } from 'vue';
+import NavBar from './components/NavBar.vue';
+import ContentSide from './components/ContentSide.vue';
 
-export default {
-  data() {
-    return {
-      
-    }
-  },
-
-  components:{ NavBar, ContentSide }
+export default defineComponent({
+  name: 'App',
+  components: {
+    NavBar,ContentSide
 }
+});
 </script>
+
+
