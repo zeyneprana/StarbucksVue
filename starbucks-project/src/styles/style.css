@@ -32,3 +32,7 @@
 .ml-5{
     margin-left: 110px;
 }
+
+.headerNavbar{
+    z-index: 1;
+}
