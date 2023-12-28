@@ -6,7 +6,7 @@
                 <router-link class="text-decoration-none" :to="{path:'/starbucks-rewards'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Starbucks Reward</a></li></router-link>
                 <router-link class="text-decoration-none" :to="{path:'/menu'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Menü</a></li></router-link>
                 <router-link class="text-decoration-none" :to="{path:'/campaigns'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kampanyalar</a></li></router-link>
-                <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">E-Gift</a></li>
+                <router-link class="text-decoration-none" :to="{path:'/e-gift'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">E-Gift</a></li></router-link>
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kurumsal Satış</a></li>
             </ul>
         </div> 

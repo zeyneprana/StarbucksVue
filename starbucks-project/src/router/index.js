@@ -21,6 +21,11 @@ const routes = [
     path: "/starbucks-rewards",
     component: () => import("../pages/StarbucksRewardPage.vue"),
   },
+  {
+    name: "EGiftPage",
+    path: "/e-gift",
+    component: () => import("../pages/EGiftPage.vue"),
+  },
 ];
 
 const router = createRouter({
