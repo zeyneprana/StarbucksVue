@@ -1,5 +1,7 @@
 *{
-    font-family: cursive;
+    font-family: cursive ;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -37,8 +39,16 @@
     margin-top: 50px;
 }
 
+.mt-6{
+    margin-top: 70px;
+}
+
 .ml-5{
     margin-left: 110px;
+}
+
+.border-bottom-green{
+    border-bottom: 4px solid rgb(15, 45, 39);;
 }
 
 .headerNavbar{
@@ -82,9 +92,30 @@
 }
 
 
-/* Footer */
 
-
-footer{
+.reward-photo{
+    background-color: rgb(15, 45, 39);
+    height: 100vh;
+    position: sticky;
+    top: 0;
     
+}
+
+.reward-photo>img{
+    margin-top: 190px;
+    width: 200px ;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-75%);
+    
+}
+
+.starcodeinput{
+
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid rgba(220, 220, 220, 0.883);
+
 }

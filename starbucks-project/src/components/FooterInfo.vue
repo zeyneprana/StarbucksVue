@@ -18,6 +18,7 @@ import { defineComponent, reactive , toRefs} from 'vue'
 
 
 export default defineComponent({
+    
     setup() {
         const state = reactive({
             infoList: [
@@ -29,7 +30,7 @@ export default defineComponent({
                 { id: 6, title: "Gift Card" },
                 { id: 7, title: "Bize Ulaşın" },
             ],
-            deneme: "DENEME!!!"
+           
 
         })
 

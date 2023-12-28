@@ -3,13 +3,13 @@
         <div class="flex">
             <img style="width: 60px;" src="../assets/starbucks-navbar.png" >
             <ul class="flex list-style-none q-my-auto">
-                <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Starbucks Reward</a></li>
-                <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Menü</a></li>
-                <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kampanyalar</a></li>
+                <router-link class="text-decoration-none" :to="{path:'/starbucks-rewards'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Starbucks Reward</a></li></router-link>
+                <router-link class="text-decoration-none" :to="{path:'/menu'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Menü</a></li></router-link>
+                <router-link class="text-decoration-none" :to="{path:'/campaigns'}"><li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kampanyalar</a></li></router-link>
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">E-Gift</a></li>
                 <li class="q-mx-sm"><a class="text-decoration-none text-grey-8 fs-3 text-weight-bold" href="#">Kurumsal Satış</a></li>
             </ul>
-        </div>
+        </div> 
         <div class="flex items-center">
             <div>
                 <ul class="flex items-baseline  list-style-none">
@@ -32,7 +32,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </template>
 
