@@ -1,6 +1,6 @@
 <template>
     <div class="row q-my-lg bg-grey-1">
-        <div v-for="reward in rewardList" :key="reward.id" class="col-4 ">
+        <div v-for="reward in getRewardList" :key="reward.id" class="col-4 ">
            <a class="text-decoration-none" href="#">
             <div class="row items-center">
                 <img width="150" :src="require(`@/assets/starbucks-rewards/${reward?.url}`)">
@@ -24,33 +24,23 @@
 
 
     </div>
+    
 
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 
-import { defineComponent, reactive, toRefs } from 'vue';
+import { mapState } from 'pinia';
+import { authStore } from "@/stores/index"
 
 
 
 export default defineComponent({
 
-    setup() {
 
-        const state = reactive({
-
-            rewardList: [
-                { id: 1, url: "reward1.png", content: "Hoş Geldin 15⭐" },
-                { id: 2, url: "reward2.png", content: "15⭐ = İkram İçecek" },
-                { id: 3, url: "reward3.png", content: "İyi ki Doğdun!" },
-
-
-            ]
-
-        })
-
-        return { ...toRefs(state) }
-
+    computed:{
+        ...mapState(authStore,["getRewardList"])
     }
 
 })

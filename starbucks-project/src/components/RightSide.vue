@@ -4,6 +4,7 @@
         <FeatureCard />
         <q-separator class="q-my-lg" />
         <FooterSide />
+        {{ getUser }}
     </div>
 </template>
 
@@ -12,12 +13,17 @@
 import CampaignCard from './CampaignCard.vue';
 import FeatureCard from './FeatureCard.vue';
 import FooterSide from './FooterSide.vue';
+import { mapState } from 'pinia';
+import { authStore } from "@/stores/index"
 
 import { defineComponent} from 'vue';
 
 export default defineComponent({
     
     components: { CampaignCard, FeatureCard, FooterSide },
+    computed:{
+        ...mapState(authStore,["getUser"])
+    }
 
 })
 </script>

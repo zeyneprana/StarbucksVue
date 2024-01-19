@@ -9,10 +9,8 @@
 
                         <q-card-section>
                             <div>
-                                {{ help.content }}
-
+                                {{ help.content }}<br/>
                                 <q-btn class="q-mt-lg" color="green" label="Videoyu izle" outline rounded />
-
                             </div>
                         </q-card-section>
                     </q-card>
@@ -36,8 +34,6 @@
 
 import { defineComponent, reactive, toRefs } from 'vue';
 
-
-
 export default defineComponent({
 
     setup() {
@@ -49,8 +45,6 @@ export default defineComponent({
                 { id: 2, url: "help2.jpg", content: "Starbucks® Mobil Uygulaması'nda Kart Nasıl Oluşturulur ?" },
                 { id: 3, url: "help3.jpg", content: "Starbucks® Gift Card'ındaki Bakiye Starbucks Mobil Uygulaması'na nasıl aktarılır ?" },
                 { id: 4, url: "help4.jpg", content: "Starbucks® Mobil Uygulaması'na Masterpass Hesabı Nasıl Eklenir ?" },
-
-
             ]
 
         })

@@ -2,7 +2,6 @@
     <div class="q-mx-lg">
         <EGiftCard title="2024! 🎁🎄" :egiftList="egiftList"/>
         <EGiftCard title="CUMHURIYETIMIZIN 100. YIL❤️" :egiftList="egiftList2"/>
-
     </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
     <div>
         <NavBar />
-        <StarbucksRewardContent/>
-        
+        <StarbucksRewardContent />
+
     </div>
 </template>
 
@@ -10,15 +10,28 @@
 <script lang="ts">
 import NavBar from '@/components/NavBar.vue';
 import StarbucksRewardContent from '@/components/StarbucksRewardPageComponents/StarbucksRewardContent.vue';
- 
+
+import { mapActions } from 'pinia';
+import { authStore } from "@/stores/index"
+
 import { defineComponent } from 'vue';
 
 export default defineComponent({
 
-    setup() {
-
+    created() {
+        this.setRewardList()
     },
-    components: { NavBar,StarbucksRewardContent }
+
+    unmounted() {
+        this.clearRewardList()
+    },
+
+    methods: {
+
+        ...mapActions(authStore, ["setRewardList", "clearRewardList"])
+    },
+
+    components: { NavBar, StarbucksRewardContent }
 
 })
 </script>
